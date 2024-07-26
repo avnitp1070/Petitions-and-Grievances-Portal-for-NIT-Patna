@@ -1,0 +1,164 @@
+/* Main container for the petition list */
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for each petition card */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 360px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    max-width: 1200px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Card header for petition title and email */
+.card-header {
+    padding: 0.7rem;
+    font-weight: bold;
+    background-color: #f0f4f8;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Apply rounded corners only to the top header */
+.card-header:nth-of-type(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header:nth-of-type(2) {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Card body for petition description */
+.card-body {
+    padding: 0.01rem 0.2rem;
+    color: #444;
+    line-height: 1.6;
+    flex: 1; /* This makes the card body expand to fill available space */
+}
+
+/* Card footer for buttons and vote count */
+.card-footer {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #f0f4f8;
+    border-top: 0.001px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Style for upvote and downvote buttons */
+.card-footer .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-footer .btn-success:hover {
+    background-color: #218838;
+}
+
+.card-footer .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-footer .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Style for vote count badge */
+.dis {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.25rem 1.75rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .card-header {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        font-size: 0.875rem;
+    }
+
+    .btn-success, .btn-danger {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .dis {
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 0.5rem;
+        max-width: 100%;
+    }
+
+    .card-header {
+        font-size: 0.85rem;
+    }
+
+    .card-body {
+        font-size: 0.8rem;
+    }
+
+    .btn-success, .btn-danger {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .dis {
+        font-size: 0.875rem;
+        padding: 0.3rem 0.5rem;
+    }
+}

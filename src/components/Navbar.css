@@ -1,0 +1,76 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2.75rem;
+    font-size: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+}
+
+.nav-links a.active {
+    color: #007bff; /* Active link color */
+    font-weight: bold; /* Optional: makes active link bold */
+}
+
+
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 27px;
+}
+
+.button {
+    background-color: #8a9095; /* Button color */
+    color: #120101e2; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        font-size: 20px;
+        gap: 1.5rem;
+    }
+
+    .auth-buttons {
+        font-size: 20px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 734px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

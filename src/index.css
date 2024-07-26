@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg');
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 91.666667%; 
+  max-width: 1160px;
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* .button {
+  padding: 0.7rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+
