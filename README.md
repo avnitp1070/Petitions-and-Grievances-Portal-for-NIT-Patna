@@ -78,13 +78,11 @@ The project is organized into the following main directories and files:
 ## Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For any questions or feedback, please reach out to the project maintainers:
 
-- Avnit Prakash (you@example.com)
+- Avnit Prakash (avnitprakash3@gmail.com)
 
 ---
 
