@@ -32,7 +32,7 @@ const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn}) => {
   };
 
   return (
-    // <div>
+    //  <div>
       <div className="tem">
         <div style={{
           width: '91.6667%', 
@@ -88,19 +88,18 @@ const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn}) => {
             Sign Up with Google
            </button>)
           }
-          <br/>
-          <br/>
-          <br/>
-          <br/>
       </div>
-     
+        
         <div className='display' style={{ position: 'relative',float: 'left', width: '91.67%', maxWidth: '450px' }}>
-            <img src={FrameImage} alt="Pattern" style={{ width: '580px',position: 'fixed', height: '514px' }} 
+            <img src={FrameImage} alt="Pattern" style={{ width: '580px', height: '514px', position: 'absolute', top: '50px' ,left: '10px' }} 
              loading='lazy' />
-            <img src={image} alt="login" style={{ width: '558px', height: '500px', position: 'fixed', top: '110px', left: '815px' }} 
+            <img src={image} alt="login" style={{ width: '558px', height: '500px', position: 'absolute', top: '40px', left: '10px' }} 
             loading='lazy'
             
             />
+        </div>
+        <div style={{ height: '700px' }} >
+
         </div>
     </div>
   )

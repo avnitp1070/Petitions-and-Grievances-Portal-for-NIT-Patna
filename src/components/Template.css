@@ -55,13 +55,42 @@
     background-color: #e0e0e0;
   }
 
-  @media (max-width: 1613px) {
+ 
+@media (max-width: 1200px) {
     .tem {
-        padding: 10px;
+        column-gap: 24px;
+        row-gap: 24px;
     }
 
     h1 {
         font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .tem {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .frame-image, .login-image {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
     }
 
     p {
@@ -73,13 +102,13 @@
     }
 }
 
-@media (max-width: 1414px) {
+@media (max-width: 600px) {
     .tem {
         padding: 5px;
     }
 
     h1 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     p {
@@ -92,18 +121,13 @@
     }
 
     .display img {
-        display: none; /* Hide images for screens narrower than 1414px */
+        display: none;
     }
 }
 
-@media (max-width: 734px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .auth-buttons {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 400px) {
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.5rem;
     }
 }
